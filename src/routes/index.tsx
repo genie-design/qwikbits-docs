@@ -38,7 +38,7 @@ export default component$(() => {
               variantProps={{ intent: "primary" }}
               href="/headless-ui"
             >
-              Learn More
+              Headless UI Docs
             </Cta>
           </div>
           <div class="flex flex-col gap-8 h-full">
@@ -64,7 +64,7 @@ export default component$(() => {
               variantProps={{ intent: "primary" }}
               href="/utils"
             >
-              Learn More
+              Utils Docs
             </Cta>
           </div>
         </div>

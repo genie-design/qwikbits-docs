@@ -34,6 +34,11 @@ export default component$(() => {
     <QwikCityProvider>
       <head>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Your one stop for accessible components and other helpers for Qwik."
+        ></meta>
+        <title>Qwik Bits</title>
         <RouterHead />
       </head>
       <body lang="en">
