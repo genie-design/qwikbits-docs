@@ -23,6 +23,9 @@ export default component$(() => {
               Highly customizable, to the point of being able to change
               individual element tags that the component creates.
             </h5>
+            <p>
+              Current components are Collapse, Dialog, Dropdown, Tabs and Toggle
+            </p>
             <CodeBlock
               class="!bg-slate-200 !text-slate-900 font-mono"
               codeClass="!text-sky-800"
@@ -43,6 +46,10 @@ export default component$(() => {
               <h3>Utils</h3>
             </Cta>
             <h5>Utilities and other helpers for Qwik</h5>
+            <p>
+              Create a Qwik component based on the tag name, serialize class
+              props, fix 100vh on iPhone and more!
+            </p>
             <div class="mt-auto">
               <CodeBlock
                 class="!bg-slate-200 !text-slate-900 font-mono"
