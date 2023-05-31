@@ -43,6 +43,9 @@ devDependencies:
   '@builder.io/qwik-city':
     specifier: ^1.1.4
     version: 1.1.4
+  '@cloudflare/workers-types':
+    specifier: ^4.20230518.0
+    version: 4.20230518.0
   '@types/eslint':
     specifier: 8.40.0
     version: 8.40.0
@@ -1503,6 +1506,10 @@ packages:
     dependencies:
       toucan-js: 3.1.0
     dev: false
+
+  /@cloudflare/workers-types@4.20230518.0:
+    resolution: {integrity: sha512-A0w1V+5SUawGaaPRlhFhSC/SCDT9oQG8TMoWOKFLA4qbqagELqEAFD4KySBIkeVOvCBLT1DZSYBMCxbXddl0kw==}
+    dev: true
 
   /@esbuild-plugins/node-globals-polyfill@0.1.1(esbuild@0.16.3):
     resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}
