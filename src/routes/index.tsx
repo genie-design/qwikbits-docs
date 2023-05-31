@@ -68,6 +68,18 @@ export default component$(() => {
             </Cta>
           </div>
         </div>
+        <p class="flex">
+          Please add a star on{" "}
+          <a
+            href="https://github.com/genie-design/qwikbits"
+            target="_blank"
+            rel="noreferrer"
+            class="flex gap-4 ml-2"
+          >
+            <span class="underline">github</span>
+            <span class="block i-lucide-github text-3xl text-sky-900" />
+          </a>
+        </p>
         <pre class="mt-16">
           Note: Qwik Bits is not a product of Qwik or Builder.io
         </pre>
