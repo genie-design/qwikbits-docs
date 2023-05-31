@@ -12,11 +12,11 @@ dependencies:
     specifier: 0.0.5
     version: 0.0.5(unocss@0.52.7)
   '@qwikbits/headless-ui':
-    specifier: ^0.6.3
-    version: 0.6.3(@builder.io/qwik@1.1.4)(@qwikbits/utils@0.6.3)
+    specifier: ^0.6.4
+    version: 0.6.4(@builder.io/qwik@1.1.4)(@qwikbits/utils@0.6.4)
   '@qwikbits/utils':
-    specifier: ^0.6.3
-    version: 0.6.3(@builder.io/qwik@1.1.4)
+    specifier: ^0.6.4
+    version: 0.6.4(@builder.io/qwik@1.1.4)
   '@sentry/browser':
     specifier: ^7.53.1
     version: 7.53.1
@@ -2542,19 +2542,19 @@ packages:
   /@polka/url@1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
 
-  /@qwikbits/headless-ui@0.6.3(@builder.io/qwik@1.1.4)(@qwikbits/utils@0.6.3):
-    resolution: {integrity: sha512-znRQgvs1whxQzV4YOJQ4lUiazBOU/1cKjs/p18zgcNRpYCunXP9LWKR3jSJQsR9dA11WqEZbZvGfkWEB1crrhQ==}
+  /@qwikbits/headless-ui@0.6.4(@builder.io/qwik@1.1.4)(@qwikbits/utils@0.6.4):
+    resolution: {integrity: sha512-YgWymvkF1cOasiHBdJae4wryZXU0Ram8t3QBHwFvbFHh+cnxM2IoEuxTjFGxZXdO7FVnd9eygDAuIFpteBxNuA==}
     engines: {node: '>=15.0.0'}
     peerDependencies:
       '@builder.io/qwik': '*'
-      '@qwikbits/utils': 0.6.3
+      '@qwikbits/utils': 0.6.4
     dependencies:
       '@builder.io/qwik': 1.1.4(undici@5.22.1)
-      '@qwikbits/utils': 0.6.3(@builder.io/qwik@1.1.4)
+      '@qwikbits/utils': 0.6.4(@builder.io/qwik@1.1.4)
     dev: false
 
-  /@qwikbits/utils@0.6.3(@builder.io/qwik@1.1.4):
-    resolution: {integrity: sha512-9QqDMuiTnBSc/0X1W0YC+WZF4IVsfE0ya6lUPgL+g+eUCg44iPOICrcCVhG+TASuhBiLQITHHS0tySx9EiRamw==}
+  /@qwikbits/utils@0.6.4(@builder.io/qwik@1.1.4):
+    resolution: {integrity: sha512-SMreHK+Kj7dHXcSJhIHjP9qaPsXObZ86AdygjmGy6ArHa17PvS08kKWvq+Buc2oHc7ZnhH/E2nTjFQ0GolGLRA==}
     engines: {node: '>=15.0.0'}
     peerDependencies:
       '@builder.io/qwik': '*'
