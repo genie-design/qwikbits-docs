@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <div class="flex flex-col gap-8 m-16">
       <div class="flex flex-col gap-16">
-        <h1 class="w-fit font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#18b6f6] to-[#ac7ef4]">
+        <h1 class="w-fit text-center font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#18b6f6] to-[#ac7ef4]">
           Qwik Bits
         </h1>
         <h4>
@@ -68,21 +68,21 @@ export default component$(() => {
             </Cta>
           </div>
         </div>
-        <p class="flex">
+        <p>
           Please add a star on{" "}
           <a
             href="https://github.com/genie-design/qwikbits"
             target="_blank"
             rel="noreferrer"
-            class="flex gap-4 ml-2"
+            aria-label="GitHub Repo"
           >
             <span class="underline">github</span>
-            <span class="block i-lucide-github text-3xl text-sky-900" />
+            <span class="inline-block transform translate-y-1/3 i-lucide-github text-3xl text-sky-900" />
           </a>
         </p>
-        <pre class="mt-16">
+        <p class="mt-16">
           Note: Qwik Bits is not a product of Qwik or Builder.io
-        </pre>
+        </p>
       </div>
     </div>
   );

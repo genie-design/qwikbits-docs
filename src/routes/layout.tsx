@@ -44,7 +44,9 @@ export default component$(() => {
           "grow bg-slate-100 color-sky-950": true,
         }}
       >
-        <Slot />
+        <div class="mb-24">
+          <Slot />
+        </div>
       </main>
       {/* <Footer /> */}
     </VHElement>
