@@ -7,7 +7,7 @@ export default component$(() => {
     <div class="flex flex-col gap-8">
       <div class="flex flex-col gap-8">
         <Cta href="/utils/qwik-html-element">
-          <h2>QwikHTMLElement</h2>
+          <h2 class="text-3xl lg:text-5xl">QwikHTMLElement</h2>
         </Cta>
         <h5>Create a Qwik component based on the tag name</h5>
         <p>

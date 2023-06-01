@@ -5,7 +5,7 @@ import { CodeBlock } from "~/components/code-block";
 
 export default component$(() => {
   return (
-    <div class="flex flex-col gap-8 m-16">
+    <div class="flex flex-col gap-8 m-8 md:m-16">
       <div class="flex flex-col gap-16">
         <h1 class="w-fit text-center font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#18b6f6] to-[#ac7ef4]">
           Qwik Bits
