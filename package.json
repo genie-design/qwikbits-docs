@@ -59,8 +59,8 @@
   "dependencies": {
     "@cloudflare/pages-plugin-sentry": "^1.1.1",
     "@julr/unocss-preset-forms": "0.0.5",
-    "@qwikbits/headless-ui": "^0.6.5",
-    "@qwikbits/utils": "^0.6.5",
+    "@qwikbits/headless-ui": "^0.6.6",
+    "@qwikbits/utils": "^0.6.6",
     "@sentry/browser": "^7.54.0",
     "cal-sans": "^1.0.1",
     "class-variance-authority": "^0.6.0",

@@ -24,6 +24,8 @@ export default component$(() => {
 export default component$(() => {
   return (
     <VHElement
+      vh={100}
+      styles={["min-height"]}
       class={{
         'font-sans flex flex-col text-lg': true,
       }}
