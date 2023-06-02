@@ -138,6 +138,7 @@ line-height: inherit; }
 .grid{display:grid;}
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .m-8{margin:2rem;}
+.m12{margin:3rem;}
 .m45\.82{margin:11.455rem;}
 .mb-2{margin-bottom:0.5rem;}
 .mb-24{margin-bottom:6rem;}

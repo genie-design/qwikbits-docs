@@ -10,6 +10,7 @@ import * as Sentry from "@sentry/browser";
 import "@unocss/reset/tailwind-compat.css";
 import "./global.css";
 import "cal-sans";
+import "./uno.css";
 import "virtual:uno.css";
 export default component$(() => {
   /*
