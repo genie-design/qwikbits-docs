@@ -27,7 +27,7 @@ export default component$(() => {
   ];
   const mobileMenuOpen = useSignal(false);
   return (
-    <header class="text-sky-900 sticky bg-slate-200 top-0 z-10 flex justify-between gap-8 h-28 min-h-28 md:h-20 md:min-h-20 w-full py-2 px-8 overflow-visible">
+    <header class="text-sky-900 sticky bg-slate-200 top-0 z-10 flex justify-between gap-8 h-28 min-h-28 md:h-20 md:min-h-20 w-full py-2 px-8 md:px-16 overflow-visible">
       <a
         href="/"
         aria-label="Qwik Bits Logo"
@@ -70,7 +70,10 @@ export default component$(() => {
         <div class="lg:hidden h-[36px]">
           <Dropdown
             open={mobileMenuOpen}
-            triggerProps={{ class: "bg-transparent text-sky-900" }}
+            triggerProps={{
+              "aria-label": "Menu",
+              class: "bg-transparent text-sky-900",
+            }}
           >
             <div q:slot="trigger" class="i-lucide-menu text-4xl bg-sky-900 " />
             <div
@@ -105,7 +108,7 @@ export default component$(() => {
           </Dropdown>
         </div>
       </nav>
-      <div class="fixed right-8 bottom-8 flex gap-4 items-center lg:bg-transparent bg-slate-200 py-1 px-4 rounded-8">
+      <div class="fixed right-8 md:right-16 bottom-8 md:bottom-16 flex gap-4 items-center lg:bg-transparent bg-slate-200 py-1 px-4 rounded-8">
         <h6 class={t8y({ size: "text-lg" })}>Dark Mode:</h6>
         <Toggle
           invertChecked

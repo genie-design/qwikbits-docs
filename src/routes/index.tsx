@@ -5,7 +5,7 @@ import { CodeBlock } from "~/components/code-block";
 
 export default component$(() => {
   return (
-    <div class="flex flex-col gap-8 m-8 md:m-16">
+    <div class="flex flex-col gap-8 ">
       <div class="flex flex-col gap-16">
         <h1 class="w-fit text-center font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#18b6f6] to-[#ac7ef4]">
           Qwik Bits
@@ -69,15 +69,17 @@ export default component$(() => {
           </div>
         </div>
         <p>
-          Please add a star on{" "}
+          Please add a{" "}
+          <span class="inline-block transform translate-y-1/4 i-lucide-star text-xl text-sky-900" />{" "}
+          on{" "}
           <a
             href="https://github.com/genie-design/qwikbits"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub Repo"
           >
-            <span class="underline">github</span>
-            <span class="inline-block transform translate-y-1/3 i-lucide-github text-3xl text-sky-900" />
+            <span class="underline">github</span>{" "}
+            <span class="inline-block transform translate-y-1/4 i-lucide-github text-2xl text-sky-900" />
           </a>
         </p>
         <p class="mt-16">
