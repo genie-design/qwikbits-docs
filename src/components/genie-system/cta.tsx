@@ -60,7 +60,7 @@ export default component$((props: CTAProps) => {
   return (
     <>
       {href ? (
-        <Link onClick$={props.onClick$} {...props} class={classes} href={href}>
+        <Link href={href} {...props} class={classes}>
           {text}
           <Slot />
         </Link>

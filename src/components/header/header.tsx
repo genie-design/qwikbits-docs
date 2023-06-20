@@ -1,5 +1,5 @@
 import { component$, useContext, useSignal } from "@builder.io/qwik";
-import { useLocation } from "@builder.io/qwik-city";
+import { Link, useLocation } from "@builder.io/qwik-city";
 import { QwikBitsLogo } from "../icons/qwikbits";
 import { Dropdown, Toggle } from "@qwikbits/headless-ui";
 import { ThemeContext } from "../../routes/layout";
@@ -28,13 +28,13 @@ export default component$(() => {
   const mobileMenuOpen = useSignal(false);
   return (
     <header class="text-sky-900 sticky bg-slate-200 top-0 z-10 flex justify-between gap-8 h-28 min-h-28 md:h-20 md:min-h-20 w-full py-2 px-8 md:px-16 overflow-visible">
-      <a
+      <Link
         href="/"
         aria-label="Qwik Bits Logo"
         class="flex justify-center items-center block"
       >
         <QwikBitsLogo />
-      </a>
+      </Link>
       <nav class="flex gap-4 items-center justify-center content-center ">
         <div class="gap-4 items-center justify-center content-center hidden lg:flex">
           {links.map((link) => (
@@ -67,21 +67,26 @@ export default component$(() => {
         >
           <div class="i-lucide-github text-3xl" />
         </a>
-        <div class="lg:hidden h-[36px]">
+        <div class="lg:hidden h-[36px] relative">
           <Dropdown
             open={mobileMenuOpen}
             triggerProps={{
               "aria-label": "Menu",
               class: "bg-transparent text-sky-900",
             }}
+            contentProps={{
+              tag:"div",
+              role: "navigation",
+              class: "bg-transparent",
+            }}
           >
             <div q:slot="trigger" class="i-lucide-menu text-4xl bg-sky-900 " />
-            <div
+            <ul
               q:slot="content"
-              class="flex flex-col w-fit bg-slate-100 gap-4 p-8 rounded-4 absolute -translate-x-[calc(100%-36px)] border border-slate-200"
+              class="flex flex-col bg-slate-100 gap-4 p-8 rounded-4 border border-slate-200 m-0 fixed top-20 right-8"
             >
               {links.map((link) => (
-                <div key={link.href}>
+                <li key={link.href}>
                   <Cta
                     href={link.href}
                     onClick$={() => {
@@ -94,7 +99,7 @@ export default component$(() => {
                       intent: "link",
                     }}
                     class={{
-                      "whitespace-nowrap": true,
+                      "whitespace-nowrap text-black": true,
                       underline:
                         getNormalizedPathname(url.pathname) === link.pathname ||
                         getNormalizedPathname(url.pathname) === link.href,
@@ -102,9 +107,9 @@ export default component$(() => {
                   >
                     {link.text}
                   </Cta>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </Dropdown>
         </div>
       </nav>
