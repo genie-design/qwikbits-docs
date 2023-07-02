@@ -16,6 +16,34 @@ export default component$(() => {
           actions or functions to the user. Polyfills the upcoming browser
           popover API for maximum accessibility.
         </h5>
+        <div class="p-8 bg-red-50 text-red-900">
+          <div class="flex gap-2 mb-2 items-center">
+            <div class="i-lucide-alert-triangle text-3xl"></div>
+            <p>WARNING:</p>
+          </div>
+          Due to active development on the{" "}
+          <a
+            class="underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://developer.chrome.com/blog/introducing-popover-api/"
+          >
+            popover API
+          </a>{" "}
+          and{" "}
+          <a
+            class="underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/"
+          >
+            CSS anchor positioning
+          </a>{" "}
+          this component is a bit ahead of its time and may be tricky to
+          position properly. See the mobile menu of this page for a working
+          example where we always know where the trigger is but the demos on
+          this page currently do not work.
+        </div>
         <h5>Demo:</h5>
         <div class="max-w-prose w-full grid grid-cols-1 gap-8 justify-items-start">
           <Dropdown
